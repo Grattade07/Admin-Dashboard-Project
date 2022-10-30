@@ -74,6 +74,8 @@ header {
     height: 3rem;
 }
 
+/* header bottom right */
+
 #header-btright {
     display: flex;
     justify-content: center;
@@ -82,12 +84,53 @@ header {
     gap: 10px;
 }
 
+/* sidebar formatting */
+
 #sidebar {
     grid-column: 1/2;
     grid-row: 1/6;
 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    justify-items: left;
+    align-items: center;
+    row-gap: -20px;
+
     border: 1px solid black;
+    padding-left: 30px;
 }
+
+/* formatting of smaller elements*/
+
+#sidebar>div>img, #sidebar>div>div>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#sidebarS1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  font-size: 28px;
+}
+
+#sidebarS2, #sidebarS3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 22px;
+}
+
+#home, #profile, #messages, #history, #tasks, #communities, #settings, #support, #privacy {
+    display: flex;
+    gap: 20px;
+
+}
+
 
 #content {
     grid-column: 2/3;

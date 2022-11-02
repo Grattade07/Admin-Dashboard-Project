@@ -73,8 +73,10 @@ header {
 
 #header-btleft {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+
+    padding-left: 80px;
 
     gap: 10px;
 }

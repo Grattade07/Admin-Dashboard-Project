@@ -218,6 +218,11 @@ button {
     
 }
 
+#projects-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .project-content {
     display: flex;
     flex-direction: column;

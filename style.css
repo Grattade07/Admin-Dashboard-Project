@@ -10,8 +10,6 @@ body {
     display: grid;
     width: 100vw;
     height: 100vh;
-    border: 1px solid black;
-    background-color: rgb(67, 160, 167);
     grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(5, 1fr);
 }
@@ -198,10 +196,10 @@ button {
     grid-row: 2/6;
 
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
 
-    border: 1px solid black;
+   background-color: rgba(226,232,240,255);
 }
 
 #project-main {
@@ -214,7 +212,6 @@ button {
 }
 
 #project-main > * {
-    border: 2px solid black;
     border-radius: 10px;
 
     margin-right: 20px;
@@ -225,11 +222,19 @@ button {
     display: flex;
     flex-direction: column;
 
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgba(240,180,41,255) 0%,rgba(240,180,41,255) 5%, rgba(255,255,255,255) 5%, rgba(255,255,255,255) 100%);
+
     padding: 10px 30px;
 }
 
-.project-text {
+.project-content-title {
     font-size: 15px;
+    font-weight: bold;
+}
+
+.project-text {
+    font-size: 12px;
 }
 
 .project-content > p {
@@ -248,8 +253,6 @@ button {
 #icons > * {
     width: 30px;
     height: 30px;
-
-    border: 1px solid black;
 }
 
 /* Content RH side */

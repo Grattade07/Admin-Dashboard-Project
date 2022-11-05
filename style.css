@@ -206,15 +206,18 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
 
     margin-top:10px;
+    margin-right: 10px;
 }
 
 #project-main > * {
     border-radius: 10px;
 
     margin-right: 20px;
+
+    box-shadow: 2px 2px 10px;
     
 }
 
